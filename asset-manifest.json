@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Allah99Names/static/css/main.823a8b60.css",
+    "main.js": "/Allah99Names/static/js/main.44d87abe.js",
+    "index.html": "/Allah99Names/index.html",
+    "main.823a8b60.css.map": "/Allah99Names/static/css/main.823a8b60.css.map",
+    "main.44d87abe.js.map": "/Allah99Names/static/js/main.44d87abe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.823a8b60.css",
+    "static/js/main.44d87abe.js"
+  ]
+}
