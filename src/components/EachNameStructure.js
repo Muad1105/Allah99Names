@@ -8,7 +8,7 @@ const EachNameStructure = () => {
   const [allahNamesDesc, setAllahNamesDesc] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [numberEntered, setNumberEntered] = useState(0);
-  const [selectedLanguage, setSelectedLanguage] = useState("");
+  const [selectedLanguage, setSelectedLanguage] = useState(10);
 
   useEffect(() => {
     console.log(allahNamesDesc);
@@ -16,7 +16,7 @@ const EachNameStructure = () => {
   }, []);
   const showAllahNames = () => {
     setAllahNamesDesc(
-      selectedLanguage == (10 || "") ? allahNamesMalayalam : allahNamesEnglish
+      selectedLanguage == 10 ? allahNamesEnglish : allahNamesMalayalam
     );
   };
 

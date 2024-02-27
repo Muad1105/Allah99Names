@@ -8,6 +8,10 @@ import Select from "@mui/material/Select";
 export default function SelectLanguageDropdown({ selctedLanguage }) {
   const [language, setLanguage] = React.useState("");
 
+  React.useEffect(() => {
+    setLanguage(10);
+  }, []);
+
   const handleChange = (event) => {
     selctedLanguage(event.target.value);
     setLanguage(event.target.value);
@@ -17,7 +21,7 @@ export default function SelectLanguageDropdown({ selctedLanguage }) {
     <Box sx={{ maxWidth: 200, minWidth: 200 }}>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">
-          {language == 10 ? "ഭാഷ" : "Language"}
+          {language == 10 ? "Language" : "ഭാഷ"}
         </InputLabel>
         <Select
           labelId="demo-simple-select-label"
