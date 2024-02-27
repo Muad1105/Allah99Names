@@ -16,7 +16,7 @@ const EachNameStructure = () => {
   }, []);
   const showAllahNames = () => {
     setAllahNamesDesc(
-      selectedLanguage === (10 || "") ? allahNamesEnglish : allahNamesMalayalam
+      selectedLanguage == (10 || "") ? allahNamesMalayalam : allahNamesEnglish
     );
   };
 
