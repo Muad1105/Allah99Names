@@ -3,11 +3,12 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: rgb(63, 238, 63);
+  position: relative;
 }
 
 .name-section-container {
-  background-color: rgb(63, 238, 63);
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -15,12 +16,12 @@ body {
   justify-content: center;
   /* font-size: calc(50% + 2vmin); */
   color: rgb(41, 41, 41);
-  position: relative;
+  /* position: relative; */
 }
 
 .name-container {
   width: 80vw;
-  height: 100vh;
+  height: inherit;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -28,9 +29,8 @@ body {
   justify-content: center;
 }
 .gotoName {
-  position: absolute;
   top: 10px;
-  right: 0;
+  /* right: 0; */
   display: flex;
   justify-content: center;
 }
@@ -51,6 +51,12 @@ body {
   padding: 5px;
   box-shadow: 1px 1px 15px 10px rgba(32, 45, 49, 0.911);
   text-align: center;
+  font-weight: bold;
+}
+.description {
+  font-size: 11px;
+  font-weight: 400;
+  height: fit-content !important;
 }
 .allah-name-arabic {
   background-color: rgb(255, 255, 255);
@@ -80,7 +86,7 @@ body {
 .left-arrow,
 .right-arrow {
   position: absolute;
-  top: 30%;
+  top: 50%;
   cursor: pointer;
   border: 1px solid black;
   border-radius: 50%;
@@ -123,9 +129,6 @@ body {
     width: 100vw;
   }
   .gotoName {
-    position: absolute;
-    top: 10px;
-    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,24 +148,10 @@ body {
   }
   .left-arrow,
   .right-arrow {
-    border: 1px solid black;
-    border-radius: 50%;
-    background-color: rgb(201, 228, 0);
-    color: black;
-    height: 40px;
-    width: 40px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 5%;
-    cursor: pointer;
-    width: 80px;
+    margin-top: 40px;
   }
   .right-arrow {
     right: 25px;
-    /* bottom: 50px; */
   }
 
   .left-arrow {
@@ -181,7 +170,6 @@ body {
   }
   .gotoName {
     position: absolute;
-    left: 0;
   }
 }
 
