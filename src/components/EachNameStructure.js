@@ -75,7 +75,11 @@ const EachNameStructure = () => {
   return (
     <div className="name-section-container">
       {/* {allahNames.map((e, i) => { */}
-      <h2>Allah's 99 Names</h2>
+      <h2 className="section-header-name">
+        {selectedLanguage == 10
+          ? "Allah's 99 Names"
+          : "അല്ലാഹുവിൻ്റെ 99 നാമങ്ങൾ"}
+      </h2>
       <SelectLanguage selctedLanguage={selctedLanguage} />
       <div className="name-container">
         <div className="gotoName">
