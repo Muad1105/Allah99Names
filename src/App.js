@@ -9,6 +9,10 @@ function App() {
       <header className="App-header">
         <Routes>
           <Route path="/" element={<Navigate to="/allNames" />} />
+          <Route
+            path="https://muad1105.github.io/Allah99Names/"
+            element={<Navigate to="/allNames" />}
+          />
           <Route path="/allNames" element={<AllNamesList />} />
           <Route path="/allahName/:id" element={<EachNameStructure />} />
         </Routes>
