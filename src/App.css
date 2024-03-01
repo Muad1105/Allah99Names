@@ -7,6 +7,73 @@ body {
   position: relative;
 }
 
+/* Allah Name List Component */
+
+.name-list-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.allah-name-list-container {
+  color: #c8bb00;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-name-structure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 33px;
+}
+
+.main-name {
+  width: 87px;
+  height: 87px;
+  position: absolute;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.each-name-list-structure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-outline-image {
+  position: relative;
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.list-each-name {
+  width: 87px;
+  height: 87px;
+  position: absolute;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+}
+
+.name {
+}
+
 .name-section-container {
   min-height: 100%;
   width: 100%;

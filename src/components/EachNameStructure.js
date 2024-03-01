@@ -3,6 +3,7 @@ import allahNamesEnglish from "./AllahNamesEnglish";
 import allahNamesMalayalam from "./AllahNamesMalayalam";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import SelectLanguage from "./SelectLanguageDropdown";
+import { useParams } from "react-router-dom";
 
 const EachNameStructure = () => {
   const [allahNamesDesc, setAllahNamesDesc] = useState([]);
@@ -10,10 +11,27 @@ const EachNameStructure = () => {
   const [numberEntered, setNumberEntered] = useState(0);
   const [selectedLanguage, setSelectedLanguage] = useState(10);
 
+  const params = useParams().id;
+
   useEffect(() => {
     console.log(allahNamesDesc);
+    //To fetch and display names on first load
     showAllahNames();
   }, []);
+
+  useEffect(() => {
+    console.log(params);
+    setNumberEntered((prev) => {
+      console.log(prev, params);
+      return params;
+    });
+    console.log(numberEntered);
+  }, [params]);
+
+  useEffect(() => {
+    handleEnterPress();
+  }, [numberEntered]);
+
   const showAllahNames = () => {
     setAllahNamesDesc(
       selectedLanguage == 10 ? allahNamesEnglish : allahNamesMalayalam
@@ -21,6 +39,7 @@ const EachNameStructure = () => {
   };
 
   useEffect(() => {
+    //To fetch and display names when language changes
     showAllahNames();
   }, [selectedLanguage]);
 
@@ -63,6 +82,7 @@ const EachNameStructure = () => {
     }
   };
   const handleEnterPress = () => {
+    console.log("numberEntered", numberEntered);
     if (numberEntered > 0 && numberEntered < 100)
       setCurrentIndex((prev) => numberEntered);
   };
