@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const AllNamesList = () => {
   const navigate = useNavigate();
   const handleOpenName = (nameNumber) => {
-    navigate(`/allahName/${nameNumber}`);
+    navigate(`/Allah99Names/${nameNumber}`);
   };
   return (
     <div className="name-list-section">
