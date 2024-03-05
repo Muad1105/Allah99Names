@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/Allah99Names/static/css/main.6a483373.css",
-    "main.js": "/Allah99Names/static/js/main.e4b12d2c.js",
+    "main.css": "/Allah99Names/static/css/main.1142f1e2.css",
+    "main.js": "/Allah99Names/static/js/main.f12e22e3.js",
+    "static/media/nameBorder.jpg": "/Allah99Names/static/media/nameBorder.66a713967f1cdb324d14.jpg",
+    "static/media/allahNameHolder.png": "/Allah99Names/static/media/allahNameHolder.7c505aadc25ca496ea3d.png",
     "static/media/allah.png": "/Allah99Names/static/media/allah.a50548534a9e182a3848.png",
     "index.html": "/Allah99Names/index.html",
-    "main.6a483373.css.map": "/Allah99Names/static/css/main.6a483373.css.map",
-    "main.e4b12d2c.js.map": "/Allah99Names/static/js/main.e4b12d2c.js.map"
+    "main.1142f1e2.css.map": "/Allah99Names/static/css/main.1142f1e2.css.map",
+    "main.f12e22e3.js.map": "/Allah99Names/static/js/main.f12e22e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a483373.css",
-    "static/js/main.e4b12d2c.js"
+    "static/css/main.1142f1e2.css",
+    "static/js/main.f12e22e3.js"
   ]
 }
