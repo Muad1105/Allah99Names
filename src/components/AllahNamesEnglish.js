@@ -627,7 +627,7 @@ const allahNames = [
     nameNumber: 72,
     allahNameArabic: "ٱلْمُؤَخِّرُ",
     allahNameEnglish: "AL-MU’AKHKHIR",
-    meaning: "The Delayer, the Retarder",
+    meaning: "The Delayer, The Retarder",
     description: [
       "Any person who is a traveller should read this Name 1000 times so he will return home very soon without zny loss.",
     ],

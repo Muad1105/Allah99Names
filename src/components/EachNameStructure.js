@@ -4,6 +4,8 @@ import allahNamesMalayalam from "./AllahNamesMalayalam";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import SelectLanguage from "./SelectLanguageDropdown";
 import { useParams } from "react-router-dom";
+import nameBorder from "../image/nameBorder.jpg";
+import nameHolder from "../image/allahNameHolder.png";
 
 const EachNameStructure = () => {
   const [allahNamesDesc, setAllahNamesDesc] = useState([]);
@@ -15,6 +17,7 @@ const EachNameStructure = () => {
 
   useEffect(() => {
     console.log(allahNamesDesc);
+    setNumberEntered(0);
     //To fetch and display names on first load
     showAllahNames();
   }, []);
@@ -28,9 +31,9 @@ const EachNameStructure = () => {
     console.log(numberEntered);
   }, [params]);
 
-  useEffect(() => {
-    handleEnterPress();
-  }, [numberEntered]);
+  // useEffect(() => {
+  //   handleGoPress();
+  // }, [numberEntered]);
 
   const showAllahNames = () => {
     setAllahNamesDesc(
@@ -75,16 +78,13 @@ const EachNameStructure = () => {
     }
   };
 
-  const handleKeyPress = (event) => {
-    if (event.key === "Enter") {
-      console.log("enter");
-      handleEnterPress();
-    }
-  };
-  const handleEnterPress = () => {
+  const handleGoPress = () => {
     console.log("numberEntered", numberEntered);
-    if (numberEntered > 0 && numberEntered < 100)
+    if (numberEntered > 0 && numberEntered < 100) {
       setCurrentIndex((prev) => numberEntered);
+
+      setNumberEntered("");
+    }
   };
 
   const selctedLanguage = (lang) => {
@@ -93,72 +93,83 @@ const EachNameStructure = () => {
   };
 
   return (
-    <div className="name-section-container">
-      {/* {allahNames.map((e, i) => { */}
-      <h2 className="section-header-name">
-        {selectedLanguage == 10
-          ? "Allah's 99 Names"
-          : "അല്ലാഹുവിൻ്റെ 99 നാമങ്ങൾ"}
-      </h2>
-      <SelectLanguage selctedLanguage={selctedLanguage} />
-      <div className="name-container">
-        <div className="gotoName">
-          <input
-            type="number"
-            onChange={(e) => setNumberEntered(e.target.value)}
-            onKeyDown={handleKeyPress}
-          />
-          <button onClick={() => handleEnterPress()} className="go-btn">
-            Go
-          </button>
-        </div>
-        {allahNamesDesc[1] && (
-          <div className="name-section">
-            {currentIndex !== 0 && (
-              <div className="number">{currentIndex ? currentIndex : ""}</div>
-            )}
-            <div className="allah-name-arabic">
-              {allahNamesDesc[currentIndex].allahNameArabic}
-            </div>
-            <div className="allah-name-english">
-              {allahNamesDesc[currentIndex].allahNameEnglish}
-            </div>
-            {allahNamesDesc[currentIndex].meaning && (
-              <div className="meaning">
-                {allahNamesDesc[currentIndex].meaning}
-              </div>
-            )}
-            <div className="description">
-              <ul>
-                {allahNamesDesc[currentIndex].description[0] &&
-                  allahNamesDesc[currentIndex].description.map((e, i) =>
-                    allahNamesDesc[currentIndex].description.length > 1 ? (
-                      <li className="margin-bottom">{e}</li>
-                    ) : (
-                      <li className="margin-bottom no-style-type">{e}</li>
-                    )
-                  )}
-              </ul>
-            </div>
+    <div>
+      <img
+        src={nameBorder}
+        alt=""
+        style={{ width: "100vw", position: "absolute", height: "100%" }}
+        className=""
+      />
+      <div className="name-section-container">
+        {/* {allahNames.map((e, i) => { */}
+        <h2 className="section-header-name" style={{ zIndex: "2" }}>
+          {selectedLanguage == 10
+            ? "Allah's 99 Names"
+            : "അല്ലാഹുവിൻ്റെ 99 നാമങ്ങൾ"}
+        </h2>
+        <SelectLanguage selctedLanguage={selctedLanguage} />
+        <div className="name-container">
+          <div className="gotoName">
+            <input
+              value={numberEntered - 1 > 1 ? numberEntered : ""}
+              type="number"
+              onChange={(e) => setNumberEntered(e.target.value)}
+            />
+            <button onClick={() => handleGoPress()} className="go-btn">
+              Go
+            </button>
           </div>
-        )}
-
-        <div
-          className="left-arrow"
-          style={{ width: "40px" }}
-          onClick={() => handleIndex("-")}
-        >
-          <LeftOutlined />
-        </div>
-        <div
-          className="right-arrow"
-          style={{ width: "40px" }}
-          onClick={() => handleIndex("+")}
-        >
-          <RightOutlined />
+          {allahNamesDesc[1] && (
+            <div className="name-section">
+              <div className="name-and-meaning-holder">
+                <img src={nameHolder} className="name-holder" alt="" />
+                {currentIndex !== 0 && (
+                  <div className="number">
+                    {currentIndex ? currentIndex + "." : ""}
+                  </div>
+                )}
+                <div className="allah-name-arabic">
+                  {allahNamesDesc[currentIndex].allahNameArabic}
+                </div>
+                <div className="allah-name-translation">
+                  {allahNamesDesc[currentIndex].allahNameEnglish}
+                </div>
+              </div>
+              {allahNamesDesc[currentIndex].meaning && (
+                <div className="meaning">
+                  {allahNamesDesc[currentIndex].meaning}
+                </div>
+              )}
+              <div className="description">
+                <div style={{ listStyleType: "none" }}>
+                  {allahNamesDesc[currentIndex].description[0] &&
+                    allahNamesDesc[currentIndex].description.map((e, i) =>
+                      allahNamesDesc[currentIndex].description.length > 1 ? (
+                        <p className="margin-bottom">{e}</p>
+                      ) : (
+                        <p className="margin-bottom no-style-type">{e}</p>
+                      )
+                    )}
+                </div>
+              </div>
+            </div>
+          )}
+          <div
+            className="left-arrow"
+            style={{ width: "40px" }}
+            onClick={() => handleIndex("-")}
+          >
+            <LeftOutlined />
+          </div>
+          <div
+            className="right-arrow"
+            style={{ width: "40px" }}
+            onClick={() => handleIndex("+")}
+          >
+            <RightOutlined />
+          </div>
         </div>
       </div>
-      {/* })} */}
     </div>
   );
 };

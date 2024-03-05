@@ -18,7 +18,7 @@ export default function SelectLanguageDropdown({ selctedLanguage }) {
   };
 
   return (
-    <Box sx={{ maxWidth: 200, minWidth: 200 }}>
+    <Box sx={{ maxWidth: 150, minWidth: 150 }}>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">
           {language == 10 ? "Language" : "ഭാഷ"}

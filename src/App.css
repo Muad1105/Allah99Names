@@ -3,6 +3,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   background-color: rgb(63, 238, 63);
   position: relative;
 }
@@ -68,7 +69,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 23px;
 }
 
 .name {
@@ -112,38 +112,65 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.name-and-meaning-holder {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.name-holder {
+  width: 200px;
+  height: 160px;
+}
+
 .number,
 .allah-name-arabic,
-.allah-name-english,
+.allah-name-translation,
 .meaning,
 .description {
-  border-bottom: 2px solid rgb(46, 46, 46);
   padding: 5px;
-  box-shadow: 1px 1px 15px 10px rgba(32, 45, 49, 0.911);
   text-align: center;
   font-weight: bold;
 }
-.description {
-  font-size: 11px;
-  font-weight: 400;
-  height: fit-content !important;
-}
 .allah-name-arabic {
-  background-color: rgb(255, 255, 255);
-  font-size: 30px;
+  position: absolute;
+  font-size: 15px;
+  color: rgb(209, 209, 4);
+  z-index: 2;
+  top: 40%;
+  left: 20%;
+}
+.number {
+  position: absolute;
+  top: 78%;
+  left: 17%;
+  font-size: 11px;
   color: rgb(36, 153, 0);
 }
-.allah-name-english {
-  background-color: rgb(255, 255, 255);
+.allah-name-translation {
+  position: absolute;
   color: rgb(36, 153, 0);
+  z-index: 2;
+  top: 78%;
+  left: 30%;
+  font-size: 11px;
 }
 
 .description {
-  padding-right: 20px;
+  height: 600px;
+  font-size: 11px;
+  font-weight: 400;
   text-align: left;
-  height: 250px;
-  line-height: 145%;
 }
 
 .margin-bottom {
@@ -194,7 +221,7 @@ body {
   color: #61dafb;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   .name-container {
     font-size: 11px;
     width: 100vw;
@@ -215,8 +242,44 @@ body {
   .name-section {
     width: 90%;
   }
+
+  .name-holder {
+    width: 285px;
+    height: 150px;
+    align-items: center;
+  }
+
+  .allah-name-arabic {
+    left: 37%;
+    top: 37%;
+    font-size: 10px;
+  }
+
+  .allah-name-translation {
+    top: 80%;
+    font-size: 13px;
+    left: 36%;
+    width: 150px;
+  }
+  .number {
+    top: 80%;
+    left: 27%;
+    font-size: 15px;
+    color: rgb(36, 153, 0);
+  }
+
+  .meaning {
+    width: 250px;
+    font-size: 15px;
+    padding: 0;
+  }
+  .allah-name-arabic {
+    font-size: 20px;
+  }
   .description {
-    padding: 0 0 0 -10px;
+    font-size: 11px;
+    width: 250px;
+    padding: 10px;
   }
   .left-arrow,
   .right-arrow {
@@ -232,20 +295,34 @@ body {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
   .name-container {
     font-size: 12px;
     width: 90vw;
   }
+
   .description {
     padding: -20px;
   }
+
+  .name-holder {
+    width: 300px;
+  }
+
   .gotoName {
     position: absolute;
   }
+  .name-section {
+    width: 60%;
+  }
+  .allah-name-arabic {
+    left: 37%;
+    top: 37%;
+    font-size: 20px;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .name-container {
     font-size: 14px;
   }
@@ -253,9 +330,18 @@ body {
     top: 10px;
     position: absolute;
   }
+  .name-holder {
+    width: 200px;
+  }
+
+  .allah-name-arabic {
+    left: 39%;
+    top: 40%;
+    font-size: 17px;
+  }
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media only screen and (min-width: 1200px) {
   .name-container {
     font-size: 15px;
   }
@@ -263,14 +349,27 @@ body {
     top: 10px;
     position: absolute;
   }
+  .allah-name-arabic {
+    font-size: 20px;
+    left: 37%;
+  }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1200px) {
   .name-container {
     font-size: 15px;
   }
   .gotoName {
     top: 10px;
     position: absolute;
+  }
+
+  .name-holder {
+    width: 280px;
+  }
+
+  .allah-name-arabic {
+    font-size: 20px;
+    left: 40%;
   }
 }
