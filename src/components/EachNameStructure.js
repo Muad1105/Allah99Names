@@ -6,30 +6,26 @@ import SelectLanguage from "./SelectLanguageDropdown";
 import { useParams } from "react-router-dom";
 import nameBorder from "../image/nameBorder.jpg";
 import nameHolder from "../image/allahNameHolder.png";
+import { useSelector } from "react-redux";
 
 const EachNameStructure = () => {
   const [allahNamesDesc, setAllahNamesDesc] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [numberEntered, setNumberEntered] = useState(0);
+  const [numberEntered, setNumberEntered] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState(10);
 
   const params = useParams().id;
 
+  const selectedNameIndex = useSelector((state) => state.nameIndex.nameIndex);
+
   useEffect(() => {
-    console.log(allahNamesDesc);
-    setNumberEntered(0);
+    setCurrentIndex(selectedNameIndex);
+  }, [selectedNameIndex]);
+
+  useEffect(() => {
     //To fetch and display names on first load
     showAllahNames();
   }, []);
-
-  useEffect(() => {
-    console.log(params);
-    setNumberEntered((prev) => {
-      console.log(prev, params);
-      return params;
-    });
-    console.log(numberEntered);
-  }, [params]);
 
   // useEffect(() => {
   //   handleGoPress();
@@ -64,9 +60,6 @@ const EachNameStructure = () => {
       setCurrentIndex((prev) => Number(prev) + 1);
     }
   };
-  useEffect(() => {
-    console.log(currentIndex);
-  }, [currentIndex]);
 
   const handleIndex = (action) => {
     if (action === "+" && currentIndex < 99) {
@@ -101,7 +94,6 @@ const EachNameStructure = () => {
         className=""
       />
       <div className="name-section-container">
-        {/* {allahNames.map((e, i) => { */}
         <h2 className="section-header-name" style={{ zIndex: "2" }}>
           {selectedLanguage == 10
             ? "Allah's 99 Names"
@@ -111,7 +103,7 @@ const EachNameStructure = () => {
         <div className="name-container">
           <div className="gotoName">
             <input
-              value={numberEntered - 1 > 1 ? numberEntered : ""}
+              value={numberEntered}
               type="number"
               onChange={(e) => setNumberEntered(e.target.value)}
             />
@@ -145,9 +137,13 @@ const EachNameStructure = () => {
                   {allahNamesDesc[currentIndex].description[0] &&
                     allahNamesDesc[currentIndex].description.map((e, i) =>
                       allahNamesDesc[currentIndex].description.length > 1 ? (
-                        <p className="margin-bottom">{e}</p>
+                        <p key={i} className="margin-bottom">
+                          {e}
+                        </p>
                       ) : (
-                        <p className="margin-bottom no-style-type">{e}</p>
+                        <p key={i} className="margin-bottom no-style-type">
+                          {e}
+                        </p>
                       )
                     )}
                 </div>

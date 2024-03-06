@@ -144,7 +144,7 @@ body {
 }
 .allah-name-arabic {
   position: absolute;
-  font-size: 15px;
+  font-size: 19px;
   color: rgb(209, 209, 4);
   z-index: 2;
   top: 40%;
@@ -221,7 +221,7 @@ body {
   color: #61dafb;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 370px) and (max-width: 767px) {
   .name-container {
     font-size: 11px;
     width: 100vw;

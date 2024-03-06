@@ -2,10 +2,16 @@ import React from "react";
 import AllahNamesListArabic from "./AllahNamesEnglish";
 import AllahImage from "../image/allah.png";
 import { useNavigate } from "react-router-dom";
+import { UseDispatch, useDispatch } from "react-redux";
+import { setNameIndex } from "../redux/reducer";
+
 const AllNamesList = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const handleOpenName = (nameNumber) => {
-    navigate(`/Allah99Names/${nameNumber}`);
+    navigate(`/Allah99Names`);
+    dispatch(setNameIndex(nameNumber));
   };
   return (
     <div className="name-list-section">
