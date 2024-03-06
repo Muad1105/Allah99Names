@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  height: 100%;
 }
 
 .main-name-structure {
@@ -167,7 +168,6 @@ body {
 }
 
 .description {
-  height: 600px;
   font-size: 11px;
   font-weight: 400;
   text-align: left;
@@ -184,7 +184,7 @@ body {
 .left-arrow,
 .right-arrow {
   position: absolute;
-  top: 50%;
+  top: 70%;
   cursor: pointer;
   border: 1px solid black;
   border-radius: 50%;
@@ -221,7 +221,7 @@ body {
   color: #61dafb;
 }
 
-@media only screen and (min-width: 370px) and (max-width: 767px) {
+@media only screen and (min-width: 70px) and (max-width: 767px) {
   .name-container {
     font-size: 11px;
     width: 100vw;
@@ -283,7 +283,7 @@ body {
   }
   .left-arrow,
   .right-arrow {
-    margin-top: 40px;
+    top: 70%;
   }
   .right-arrow {
     right: 25px;
@@ -355,7 +355,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .name-container {
     font-size: 15px;
   }

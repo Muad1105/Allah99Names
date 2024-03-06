@@ -11,7 +11,7 @@ function App() {
           <Route path="/" element={<Navigate to="/Allah99Names/allNames" />} />
           <Route
             path="https://muad1105.github.io/Allah99Names/"
-            element={<Navigate to="/allNames" />}
+            element={<Navigate to="/Allah99Names/allNames" />}
           />
           <Route path="/Allah99Names/allNames" element={<AllNamesList />} />
           <Route path="/Allah99Names" element={<EachNameStructure />} />
