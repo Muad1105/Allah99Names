@@ -105,14 +105,13 @@ const EachNameStructure = () => {
             </button>
           </div>
 
-          {allahNamesDesc[0] && (
+          {allahNamesDesc[1] && (
             <div className="name-section">
               <div className="arabic-translation-name-holder">
-                {currentIndex !== 0 && (
-                  <div className="number">
-                    {currentIndex ? currentIndex : ""}
-                  </div>
-                )}
+                <div className="number">
+                  {currentIndex != 0 && currentIndex}
+                </div>
+
                 <div className="allah-name-arabic">
                   {allahNamesDesc[currentIndex].allahNameArabic}
                 </div>

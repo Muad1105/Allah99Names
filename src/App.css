@@ -30,7 +30,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 33px;
 }
 
 .main-name {
@@ -43,7 +42,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
 }
 
 .each-name-list-structure {
@@ -72,9 +70,6 @@ body {
   align-items: center;
 }
 
-.name {
-}
-
 .name-section-container {
   min-height: 100%;
   width: 100%;
@@ -82,14 +77,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* font-size: calc(50% + 2vmin); */
   color: rgb(41, 41, 41);
-  /* position: relative; */
 }
 
 .section-header-name {
   text-align: center;
-  font-size: 17px;
 }
 
 .name-container {
@@ -143,28 +135,22 @@ body {
   font-weight: bold;
 }
 .allah-name-arabic {
-  font-size: 19px;
   color: rgb(0, 34, 255);
   z-index: 2;
-  top: 40%;
-  left: 20%;
+  font-size: 30px;
 }
 .number {
   top: 78%;
   left: 17%;
-  font-size: 11px;
-  /* color: rgb(36, 153, 0); */
 }
 .allah-name-translation {
   color: rgb(36, 153, 0);
   z-index: 2;
   top: 78%;
   left: 30%;
-  font-size: 11px;
 }
 
 .description {
-  font-size: 11px;
   font-weight: 400;
   text-align: left;
 }
@@ -219,7 +205,6 @@ body {
 
 @media only screen and (min-width: 70px) and (max-width: 767px) {
   .name-container {
-    font-size: 13px;
     width: 100vw;
   }
   .gotoName {
@@ -247,32 +232,27 @@ body {
   .allah-name-arabic {
     left: 37%;
     top: 37%;
-    font-size: 10px;
   }
 
   .allah-name-translation {
     top: 80%;
-    font-size: 13px;
     left: 36%;
     width: 150px;
   }
   .number {
     top: 80%;
     left: 27%;
-    font-size: 15px;
-    /* color: rgb(36, 153, 0); */
   }
 
   .meaning {
     width: 250px;
-    font-size: 15px;
     padding: 0;
   }
   .allah-name-arabic {
     font-size: 20px;
   }
   .description {
-    font-size: 11px;
+    font-size: 13px;
     width: 250px;
     padding: 10px;
   }
@@ -292,7 +272,6 @@ body {
 
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
   .name-container {
-    font-size: 12px;
     width: 90vw;
   }
 
@@ -313,14 +292,10 @@ body {
   .allah-name-arabic {
     left: 37%;
     top: 37%;
-    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-  .name-container {
-    font-size: 14px;
-  }
   .gotoName {
     top: 10px;
     position: absolute;
@@ -332,28 +307,20 @@ body {
   .allah-name-arabic {
     left: 39%;
     top: 40%;
-    font-size: 17px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .name-container {
-    font-size: 15px;
-  }
   .gotoName {
     top: 10px;
     position: absolute;
   }
   .allah-name-arabic {
-    font-size: 20px;
     left: 37%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .name-container {
-    font-size: 15px;
-  }
   .gotoName {
     top: 10px;
     position: absolute;
@@ -364,7 +331,6 @@ body {
   }
 
   .allah-name-arabic {
-    font-size: 20px;
     left: 40%;
   }
 }
