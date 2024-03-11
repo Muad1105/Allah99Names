@@ -5,7 +5,6 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import SelectLanguage from "./SelectLanguageDropdown";
 import { useParams } from "react-router-dom";
 import nameBorder from "../image/nameBorder.jpg";
-import nameHolder from "../image/allahNameHolder.png";
 import { useSelector } from "react-redux";
 
 const EachNameStructure = () => {
@@ -13,8 +12,6 @@ const EachNameStructure = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [numberEntered, setNumberEntered] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState(10);
-
-  const params = useParams().id;
 
   const selectedNameIndex = useSelector((state) => state.nameIndex.nameIndex);
 
@@ -26,10 +23,6 @@ const EachNameStructure = () => {
     //To fetch and display names on first load
     showAllahNames();
   }, []);
-
-  // useEffect(() => {
-  //   handleGoPress();
-  // }, [numberEntered]);
 
   const showAllahNames = () => {
     setAllahNamesDesc(
@@ -111,13 +104,13 @@ const EachNameStructure = () => {
               Go
             </button>
           </div>
-          {allahNamesDesc[1] && (
+
+          {allahNamesDesc[0] && (
             <div className="name-section">
-              <div className="name-and-meaning-holder">
-                <img src={nameHolder} className="name-holder" alt="" />
+              <div className="arabic-translation-name-holder">
                 {currentIndex !== 0 && (
                   <div className="number">
-                    {currentIndex ? currentIndex + "." : ""}
+                    {currentIndex ? currentIndex : ""}
                   </div>
                 )}
                 <div className="allah-name-arabic">

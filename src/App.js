@@ -8,13 +8,16 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Routes>
-          <Route path="/" element={<Navigate to="/Allah99Names/allNames" />} />
+          <Route
+            path="/Allah99Names"
+            element={<Navigate to="/Allah99Names/allNames" />}
+          />
           <Route
             path="https://muad1105.github.io/Allah99Names/"
             element={<Navigate to="/Allah99Names/allNames" />}
           />
           <Route path="/Allah99Names/allNames" element={<AllNamesList />} />
-          <Route path="/Allah99Names" element={<EachNameStructure />} />
+          <Route path="/Allah99Names/name" element={<EachNameStructure />} />
         </Routes>
       </header>
     </div>

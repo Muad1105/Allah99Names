@@ -10,7 +10,7 @@ const AllNamesList = () => {
   const dispatch = useDispatch();
 
   const handleOpenName = (nameNumber) => {
-    navigate(`/Allah99Names`);
+    navigate(`/Allah99Names/name`);
     dispatch(setNameIndex(nameNumber));
   };
   return (
