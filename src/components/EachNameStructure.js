@@ -145,24 +145,22 @@ const EachNameStructure = () => {
               </div>
             </div>
           )}
-          {!isTouchDevice && (
-            <div>
-              <div
-                className="left-arrow"
-                style={{ width: "40px" }}
-                onClick={() => handleIndex("-")}
-              >
-                <ArrowLeftOutlined />
-              </div>
-              <div
-                className="right-arrow"
-                style={{ width: "40px" }}
-                onClick={() => handleIndex("+")}
-              >
-                <ArrowRightOutlined />
-              </div>
+          <div>
+            <div
+              className="left-arrow"
+              style={{ width: "40px" }}
+              onClick={() => handleIndex("-")}
+            >
+              <ArrowLeftOutlined />
             </div>
-          )}
+            <div
+              className="right-arrow"
+              style={{ width: "40px" }}
+              onClick={() => handleIndex("+")}
+            >
+              <ArrowRightOutlined />
+            </div>
+          </div>
         </div>
       </div>
     </div>
