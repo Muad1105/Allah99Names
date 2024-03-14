@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import allahNamesEnglish from "./AllahNamesEnglish";
 import allahNamesMalayalam from "./AllahNamesMalayalam";
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import SelectLanguage from "./SelectLanguageDropdown";
-import { useParams } from "react-router-dom";
 import nameBorder from "../image/nameBorder.jpg";
 import { useSelector } from "react-redux";
 
@@ -24,12 +23,16 @@ const EachNameStructure = () => {
     showAllahNames();
   }, []);
 
+  const isTouchDevice =
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0;
+
   const showAllahNames = () => {
     setAllahNamesDesc(
       selectedLanguage == 10 ? allahNamesEnglish : allahNamesMalayalam
     );
   };
-
   useEffect(() => {
     //To fetch and display names when language changes
     showAllahNames();
@@ -142,20 +145,24 @@ const EachNameStructure = () => {
               </div>
             </div>
           )}
-          <div
-            className="left-arrow"
-            style={{ width: "40px" }}
-            onClick={() => handleIndex("-")}
-          >
-            <LeftOutlined />
-          </div>
-          <div
-            className="right-arrow"
-            style={{ width: "40px" }}
-            onClick={() => handleIndex("+")}
-          >
-            <RightOutlined />
-          </div>
+          {!isTouchDevice && (
+            <div>
+              <div
+                className="left-arrow"
+                style={{ width: "40px" }}
+                onClick={() => handleIndex("-")}
+              >
+                <ArrowLeftOutlined />
+              </div>
+              <div
+                className="right-arrow"
+                style={{ width: "40px" }}
+                onClick={() => handleIndex("+")}
+              >
+                <ArrowRightOutlined />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

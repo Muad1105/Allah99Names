@@ -42,6 +42,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 35px;
 }
 
 .each-name-list-structure {
@@ -100,7 +101,7 @@ body {
 }
 .name-section {
   position: absolute;
-  top: 100px;
+  top: 64px;
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -135,24 +136,45 @@ body {
   font-weight: bold;
 }
 .allah-name-arabic {
-  color: rgb(0, 34, 255);
+  color: #f1b306;
   z-index: 2;
   font-size: 30px;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 11px;
+  padding: 5px 15px;
+  border: 2px solid #f1b306;
+  margin-bottom: 10px;
 }
 .number {
   top: 78%;
   left: 17%;
 }
 .allah-name-translation {
-  color: rgb(36, 153, 0);
+  color: #2ab300;
   z-index: 2;
   top: 78%;
   left: 30%;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 11px;
+  padding: 5px 15px;
+  border: 2px solid #f1b306;
+}
+.meaning {
+  color: #246ad3;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 11px;
+  padding: 5px 15px;
+  border: 2px solid #f1b306;
 }
 
 .description {
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
+  font-size: 17px;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 11px;
+  padding: 5px 15px;
+  border: 2px solid #f1b306;
 }
 
 .margin-bottom {
@@ -168,16 +190,19 @@ body {
   position: absolute;
   top: 70%;
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid #f1b306;
   border-radius: 50%;
-  background-color: rgb(201, 228, 0);
+  background-color: rgb(255, 255, 255, 0.8);
   color: black;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.1s all linear;
+  font-weight: bold;
+  font-size: 23px;
+  color: rgb(224, 127, 0);
 }
 .left-arrow:hover,
 .right-arrow:hover {
@@ -230,6 +255,7 @@ body {
   }
 
   .allah-name-arabic {
+    font-size: 28px;
     left: 37%;
     top: 37%;
   }
@@ -244,17 +270,12 @@ body {
     left: 27%;
   }
 
-  .meaning {
-    width: 250px;
-    padding: 0;
-  }
-  .allah-name-arabic {
-    font-size: 20px;
-  }
   .description {
-    font-size: 13px;
-    width: 250px;
+    /* font-size: 15px; */
+    /* width: 100%; */
     padding: 10px;
+    /* left: 10px;
+    right: 10px; */
   }
   .left-arrow,
   .right-arrow {

@@ -2,7 +2,7 @@ import React from "react";
 import AllahNamesListArabic from "./AllahNamesEnglish";
 import AllahImage from "../image/allah.png";
 import { useNavigate } from "react-router-dom";
-import { UseDispatch, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setNameIndex } from "../redux/reducer";
 
 const AllNamesList = () => {
@@ -10,7 +10,7 @@ const AllNamesList = () => {
   const dispatch = useDispatch();
 
   const handleOpenName = (nameNumber) => {
-    navigate(`/Allah99Names/name`);
+    navigate(`/name`);
     dispatch(setNameIndex(nameNumber));
   };
   return (

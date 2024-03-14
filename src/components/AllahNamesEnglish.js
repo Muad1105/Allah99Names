@@ -52,7 +52,7 @@ const allahNames = [
     meaning: "The Perfection and Giver of Peace",
     description: [
       "He who repeate this name 160 times to a sick person, will help him to regain health.",
-      "He who repeats this name frequently will be free from all calanities.",
+      "He who repeats this name frequently will be free from all calamities.",
     ],
   },
   {
@@ -121,14 +121,14 @@ const allahNames = [
     allahNameEnglish: "AL-MUSAWWIR",
     meaning: "The Fashioner, THe Shaper of Beauty",
     description: [
-      "If a woman desires to give a birth, but cannot, fasts seven days, and each day at the breaking of the fast(iftaar) she repeats this Name twenty-one times, breathes into a glass of water, anf then breaks the fast eith this water, Allah will bless her with a child. ",
+      "If a woman desires to give a birth, but cannot, fasts seven days, and each day at the breaking of the fast(iftaar) she repeats this Name twenty-one times, breathes into a glass of water, and then breaks the fast with this water, Allah will bless her with a child. ",
     ],
   },
   {
     nameNumber: 14,
     allahNameArabic: "ٱلْغَفَّارُ",
     allahNameEnglish: "AL-GHAFFAR",
-    meaning: "The All- and Oft-Forgiving",
+    meaning: "The All and Oft-Forgiving",
     description: ["He who repeats this Name will be forgiven of his sins."],
   },
   {
@@ -137,7 +137,7 @@ const allahNames = [
     allahNameEnglish: "AL-QAHHAR",
     meaning: "The Subduer, The Ever-Dominating",
     description: [
-      "The soul of him who rep[eats this Name will conquer the desires of the flesh, and his heart will be made free from attractions of the worls and gain innner peace.",
+      "The soul of him who repeats this Name will conquer the desires of the flesh, and his heart will be made free from attractions of the world and gain innner peace.",
     ],
   },
   {
@@ -146,7 +146,7 @@ const allahNames = [
     allahNameEnglish: "AL-WAHHAAB",
     meaning: "The Giver of Gifts",
     description: [
-      "If a man suffering from poverty or starvation repeats this name frequently or keeps it with him written on a piece of paper or repeats this name 40 times in the last sajda in the Chasht prayer, Allah will relieve him of his poverty, want and starvation in a wonderful way.",
+      "If a man suffering from poverty or starvation repeats this name frequently or keeps it with him written on a piece of paper or repeats this name 40 times in the last sajda of the Chasht prayer, Allah will relieve him of his poverty, want and starvation in a wonderful way.",
     ],
   },
   {
@@ -182,7 +182,7 @@ const allahNames = [
     allahNameEnglish: "AL-QAABID",
     meaning: "The Withholder",
     description: [
-      "He who writes this name on 4 pieces of food (fruit, bread,etc.) and eats then for 40 days will be free from hunger.",
+      "He who writes this name on 4 pieces of food (fruit, bread etc..) and eats then for 40 days will be free from hunger.",
     ],
   },
   {
@@ -210,7 +210,7 @@ const allahNames = [
     allahNameEnglish: "AR-RAAFI’",
     meaning: "The Exalter, The Elevator",
     description: [
-      "He who repeats this name 101 times day and noght, Allah will make him higher, as far as honour, richness and merit are concerned.",
+      "He who repeats this name 101 times day and night, Allah will make him higher, as far as honour, richness and merit are concerned.",
     ],
   },
   {
@@ -228,7 +228,7 @@ const allahNames = [
     allahNameEnglish: "AL-MUZIL",
     meaning: "The Dishonourer, The Humiliator",
     description: [
-      "He who repeats this Name 75 times will be free from harm by those who are jealous of himand wish to harm him. Allah will protect him.",
+      "He who repeats this Name 75 times will be free from harm by those who are jealous and wish to harm him. Allah will protect him.",
     ],
   },
   {
@@ -246,7 +246,7 @@ const allahNames = [
     allahNameEnglish: "AL-BASEER",
     meaning: "The All-Seeing",
     description: [
-      "He who repeats this Name 100 times after Friday afternoon prayer, Allal will give this person light in his sight and enlighten his heart.",
+      "He who repeats this Name 100 times after Friday afternoon prayer, Allah will give this person light in his sight and enlighten his heart.",
     ],
   },
   {
@@ -270,7 +270,7 @@ const allahNames = [
   {
     nameNumber: 30,
     allahNameArabic: "ٱلْلَّطِيفُ",
-    allahNameEnglish: "AL-LATEEF",
+    allahNameEnglish: "AL-LATHEEF",
     meaning: "The Subtle One, The Most Gentle",
     description: [
       "He who repeats this Name 133 times daily will have increase in sustenance and all his affairs will be settled to his satisfaction.",
@@ -280,7 +280,7 @@ const allahNames = [
     nameNumber: 31,
     allahNameArabic: "ٱلْخَبِيرُ",
     allahNameEnglish: "AL-KHABEER",
-    meaning: "The Acquainted, the All-Aware",
+    meaning: "The Acquainted, The All-Aware",
     description: [
       "If a man is a victim of selfish desires and bad habits, he will be relieved of these if he repeats this Name regularly.",
     ],
@@ -297,7 +297,7 @@ const allahNames = [
   {
     nameNumber: 33,
     allahNameArabic: " ٱلْعَظِيمُ ",
-    allahNameEnglish: "AL-‘ATHEEM",
+    allahNameEnglish: "AL-‘ALHEEM",
     meaning: "The Magnificent, The Supreme",
     description: ["Those who repeat this Name many times will be respected."],
   },
@@ -322,7 +322,7 @@ const allahNames = [
   {
     nameNumber: 36,
     allahNameArabic: " ٱلْعَلِيُّ ",
-    allahNameEnglish: "AL-‘ALEE",
+    allahNameEnglish: "AL-‘AWLIYYU",
     meaning: "The Most High, The Exalted",
     description: [
       "Any person who keeps this Name with him written on a piece of paper and reads this Name as much as he can God will give him high place and happiness.",
@@ -340,8 +340,8 @@ const allahNames = [
   {
     nameNumber: 38,
     allahNameArabic: "ٱلْحَفِيظُ",
-    allahNameEnglish: "AL-HAFEEDH",
-    meaning: "The Preserver, The All-Heedful and All-Protecting",
+    allahNameEnglish: "AL-HAFEELH",
+    meaning: "The Preserver, The All-Heedful, The All-Protecting",
     description: [
       "Any Person who keeps this name with him written on a piece of paper or reads it as much as he can he will always be prevented from dangers.",
     ],
@@ -352,7 +352,7 @@ const allahNames = [
     allahNameEnglish: "AL-MUQEET",
     meaning: "The Sustainer",
     description: [
-      "Any person who reads this Name on an empty glass and then fills it with waternand then drinks himself or make it drink to anyone else, God will give him desired need (In sha Allah).",
+      "Any person who reads this Name on an empty glass and then fills it with water and then drinks himself or make it drink to anyone else, God will give him desired need (In sha Allah).",
     ],
   },
   {
@@ -379,7 +379,7 @@ const allahNames = [
     allahNameEnglish: "AL-KAREEM",
     meaning: "The Most Generous, The Most Esteemed",
     description: [
-      "He who repeats this Name many times at bedtime will have esottem in this world (and Hereafter among the learned and righteous people).",
+      "He who repeats this Name many times at bedtime will have esteem in this world (and Hereafter among the learned and righteous people).",
     ],
   },
   {
@@ -401,7 +401,7 @@ const allahNames = [
   {
     nameNumber: 45,
     allahNameArabic: "ٱلْوَاسِعُ",
-    allahNameEnglish: "AL-WAASI’",
+    allahNameEnglish: "AL-WAASIG’",
     meaning: "The All-Encompassing, the Boundless",
     description: [
       "If one who has difficulty in earning, repeats this Name frequently, will have good earnings.",
@@ -413,7 +413,7 @@ const allahNames = [
     allahNameEnglish: "AL-HAKEEM",
     meaning: "The All-Wise",
     description: [
-      "He who repeats this Name continuously (from time to time) will not have difficulties in his work, and Allah will open to himthe door of wisdom.",
+      "He who repeats this Name continuosly (from time to time) will not have difficulties in his work, and Allah will open to him the door of wisdom.",
     ],
   },
   {
@@ -443,7 +443,7 @@ const allahNames = [
     nameNumber: 50,
     allahNameArabic: "ٱلْشَّهِيدُ",
     allahNameEnglish: "ASH-SHAHEED",
-    meaning: "The All- and Ever Witnessings",
+    meaning: "The All and Ever Witnessings",
     description: [
       "If any person's wife or children are irrespectable then he should keep his hand on his forehead and read this Name 21 times, they will become respectable.",
     ],
@@ -479,7 +479,7 @@ const allahNames = [
     nameNumber: 54,
     allahNameArabic: "ٱلْمَتِينُ",
     allahNameEnglish: "AL-MATEEN",
-    meaning: "The Firm, The Steadfast, The forseful one",
+    meaning: "The Firm, The Steadfast, The Forceful one",
     description: [
       "If one has troubles and repeats this Name, his troubles will disappear.",
     ],
@@ -512,7 +512,7 @@ const allahNames = [
   {
     nameNumber: 58,
     allahNameArabic: "ٱلْمُبْدِئُ",
-    allahNameEnglish: "AL-MU’ID",
+    allahNameEnglish: "AL-MUB'DIYU",
     meaning: "The Restorer, The Reinstater, The Originator",
     description: [
       "If this name is repeated and breathed into a pregnant woman who is afraid of aborting, she will be free of danger.",
@@ -533,7 +533,7 @@ const allahNames = [
     allahNameEnglish: "AL-MUHYEE",
     meaning: "The Giver of Life",
     description: [
-      "If any person is not healthy he should read this nameas much as he can and he will become healthy.",
+      "If any person is not healthy he should read this name as much as he can and he will become healthy.",
     ],
   },
   {
@@ -568,7 +568,7 @@ const allahNames = [
     nameNumber: 65,
     allahNameArabic: "ٱلْمَاجِدُ",
     allahNameEnglish: "AL-MAAJID",
-    meaning: "The Illustrious, the Magnificent",
+    meaning: "The Illustrious, the Magnificent, The Noble",
     description: [
       "He who repeats this Name in privacy and sincierely, his heart will be enlighted.",
     ],
@@ -588,7 +588,7 @@ const allahNames = [
     allahNameEnglish: "AL-AHAD",
     meaning: "The Unique, The Only One ",
     description: [
-      "He who repeats this Name 1000 times will have certainm secrets opened to him.",
+      "He who repeats this Name 1000 times will have certain secrets opened to him.",
     ],
   },
   {
@@ -629,16 +629,16 @@ const allahNames = [
     allahNameEnglish: "AL-MU’AKHKHIR",
     meaning: "The Delayer, The Retarder",
     description: [
-      "Any person who is a traveller should read this Name 1000 times so he will return home very soon without zny loss.",
+      "Any person who is a traveller should read this Name 1000 times so he will return home very soon without any loss.",
     ],
   },
   {
     nameNumber: 73,
     allahNameArabic: "ٱلأَوَّلُ",
     allahNameEnglish: "AL-AWWAL",
-    meaning: "The First ",
+    meaning: "The First",
     description: [
-      "He who repeats this many times will lead a good life and at the end of this life will have a good death.",
+      "If you desire male children, recite this name of Allah 40 times daily for 40 days, Allah will fulfill your desire.",
     ],
   },
   {
@@ -656,7 +656,7 @@ const allahNames = [
     allahNameEnglish: "AZ-DHAAHIR",
     meaning: "The Manifest",
     description: [
-      "He who recites this name 15 times afre Friday (Jumma Prayer) divine light (Noor) will enter his heart.",
+      "He who recites this name 15 times after Friday (Jumma Prayer) divine light (Noor) will enter his heart.",
     ],
   },
   {
@@ -692,7 +692,7 @@ const allahNames = [
     allahNameEnglish: "AL-BARR",
     meaning: "The Source of Goodness, the Kind Benefactor",
     description: [
-      "He who repeats this name to his child, this child willl be free from misfortune.",
+      "He who repeats this name to his child, his child will be free from misfortune.",
     ],
   },
   {
@@ -701,7 +701,7 @@ const allahNames = [
     allahNameEnglish: "AT-TAWWAB",
     meaning: "The Ever-Pardoning, The Relenting, The Guide To rependance",
     description: [
-      "He who repeats this name many times, his rependace willl be accepted.",
+      "He who repeats this name many times, his rependace will be accepted.",
     ],
   },
   {
@@ -747,16 +747,16 @@ const allahNames = [
     nameNumber: 86,
     allahNameArabic: "ٱلْمُقْسِطُ",
     allahNameEnglish: "AL-MUQSIT",
-    meaning: "The Equitable, the Requiter",
+    meaning: "The Equitable, The Requiter",
     description: [
-      "He who repeats this name will be freee from the harm of the devil.",
+      "He who repeats this name will be free from the harm of the devil.",
     ],
   },
   {
     nameNumber: 87,
     allahNameArabic: "ٱلْجَامِعُ",
     allahNameEnglish: "AL-JAAMI’",
-    meaning: "The Gatherer, the Uniter",
+    meaning: "The Gatherer, The Uniter",
     description: [
       "He who repeats this name will find the things that he lost.",
     ],
@@ -767,7 +767,7 @@ const allahNames = [
     allahNameEnglish: "AL-GHANIYY",
     meaning: "The Self-Sufficient, The Wealthy",
     description: [
-      "Any person who reads this name 70 times Allah will give him profit",
+      "Any person who reads this name 70 times Allah will give him profit.",
     ],
   },
   {
@@ -801,7 +801,7 @@ const allahNames = [
     nameNumber: 92,
     allahNameArabic: "ٱلْنَّافِعُ",
     allahNameEnglish: "AN-NAFI’",
-    meaning: "The Propitious, the Benefactor",
+    meaning: "The Propitious, The Benefactor",
     description: [
       "He who repeats this name 41 times at the beginning of every act, will be successfull in all his good acts.",
     ],
@@ -839,7 +839,7 @@ const allahNames = [
     allahNameEnglish: "AL-BAAQI",
     meaning: "The Ever-Surviving, The Everlasting",
     description: [
-      "He who repeats this name every Friday night 100 times all his good deeds will be accepted, by the grace of Allah.",
+      "He who repeats this name every Friday night 100 times, all his good deeds will be accepted by the grace of Allah.",
     ],
   },
   {
@@ -866,7 +866,7 @@ const allahNames = [
     allahNameEnglish: "AS-SABOOR",
     meaning: "The Forbearing, The Patient",
     description: [
-      "Any person who is in any kind of problem should read this name 1020 times and his problem wil;l be solved.",
+      "Any person who is in any kind of problem should read this name 1020 times and his problem will be solved.",
     ],
   },
 ];
