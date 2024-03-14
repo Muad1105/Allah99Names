@@ -11,10 +11,7 @@ function App() {
       <header className="App-header">
         <Routes>
           <Route path="/" element={<Navigate to="/allNames" />} />
-          <Route
-            path="/Allah99Names"
-            element={<Navigate to="/Allah99Names/allNames" />}
-          />
+          <Route path="/Allah99Names" element={<Navigate to="/allNames" />} />
           <Route path="/allNames" element={<AllNamesList />} />
           <Route path="/name" element={<EachNameStructure />} />
         </Routes>
