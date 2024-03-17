@@ -4,15 +4,17 @@ import allahNamesMalayalam from "./AllahNamesMalayalam";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import SelectLanguage from "./SelectLanguageDropdown";
 import nameBorder from "../image/nameBorder.jpg";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { setNameIndex } from "../redux/reducer";
 
 const EachNameStructure = () => {
   const [allahNamesDesc, setAllahNamesDesc] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [numberEntered, setNumberEntered] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState(10);
 
   const selectedNameIndex = useSelector((state) => state.nameIndex.nameIndex);
+  const dispatch = useDispatch();
+  const [currentIndex, setCurrentIndex] = useState(selectedNameIndex);
 
   useEffect(() => {
     setCurrentIndex(selectedNameIndex);
@@ -43,6 +45,10 @@ const EachNameStructure = () => {
     window.addEventListener("keydown", keyDownHandler);
     return () => window.removeEventListener("keydown", keyDownHandler);
   });
+
+  useEffect(() => {
+    dispatch(setNameIndex(currentIndex));
+  }, [currentIndex]);
 
   const keyDown = (event) => {
     console.log("keydown");
