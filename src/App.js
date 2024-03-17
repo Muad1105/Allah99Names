@@ -4,8 +4,6 @@ import EachNameStructure from "./components/EachNameStructure";
 import AllNamesList from "./components/AllNamesList";
 
 function App() {
-  const basename =
-    process.env.NODE_ENV === "development" ? "/" : "/Allah99Names";
   return (
     <div className="App">
       <header className="App-header">
