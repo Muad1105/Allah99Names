@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Allah99Names/static/css/main.e2ed94de.css",
-    "main.js": "/Allah99Names/static/js/main.54519996.js",
+    "main.js": "/Allah99Names/static/js/main.7038c119.js",
     "static/media/nameBorder.jpg": "/Allah99Names/static/media/nameBorder.66a713967f1cdb324d14.jpg",
     "static/media/allah.png": "/Allah99Names/static/media/allah.a50548534a9e182a3848.png",
     "index.html": "/Allah99Names/index.html",
     "main.e2ed94de.css.map": "/Allah99Names/static/css/main.e2ed94de.css.map",
-    "main.54519996.js.map": "/Allah99Names/static/js/main.54519996.js.map"
+    "main.7038c119.js.map": "/Allah99Names/static/js/main.7038c119.js.map"
   },
   "entrypoints": [
     "static/css/main.e2ed94de.css",
-    "static/js/main.54519996.js"
+    "static/js/main.7038c119.js"
   ]
 }
